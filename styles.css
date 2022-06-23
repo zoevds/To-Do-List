@@ -10,7 +10,7 @@ body {
   padding-right: 50px;
   font-size: x-large;
   height: 450px;
-  width: 280px;
+  width: 308px;
   border-radius: 8px;
   background: #4e4c57;
   box-shadow: 16px 16px 32px #42414a, -16px -16px 32px #5a5764;
@@ -34,6 +34,8 @@ form {
 input {
   background-color: black;
   color: white;
+  margin-left: 8px;
+  margin-right: 10px;
 }
 .completed {
   color: grey;
@@ -47,3 +49,9 @@ li {
 input.check {
   font-size: 50px;
 }
+@media only screen and (max-width: 360px) {
+  .container {
+    height: 450px;
+    width: 308px;
+  }
+} ;

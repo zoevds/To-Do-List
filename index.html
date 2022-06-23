@@ -15,7 +15,12 @@
       <div class="app">
         <h1>MY TO DO LIST</h1>
         <form>
-          <button class="alph-btm" onclick="sortList()">Sort</button>
+          <!-- <button class="alph-btm" onclick="sortList()">Sort</button> -->
+          <select class="form-select" aria-label="Default select example">
+            <option selected onchange="taskSort(event)">Sort By</option>
+            <option selected onchange="taskSort(event)">ascending</option>
+            <option value="2">descending</option>
+          </select>
           <input type="text" required placeholder="Add to list..." />
 
           <button type="submit">Add Item</button>

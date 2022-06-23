@@ -95,24 +95,3 @@ function editTask(event) {
   //  to update the local storage
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
-// to sort in accendinng order
-function sortList() {
-  let list, i, switching, b, shouldSwitch;
-  list = document.getElementById("id01");
-  switching = true;
-  while (switching) {
-    switching = false;
-    b = list.getElementsByTagName("LI");
-    for (i = 0; i < b.length - 1; i++) {
-      shouldSwitch = false;
-      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
-        shouldSwitch = true;
-        break;
-      }
-    }
-    if (shouldSwitch) {
-      b[i].parentNode.insertBefore(b[i + 1], b[i]);
-      switching = true;
-    }
-  }
-}
