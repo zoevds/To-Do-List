@@ -1,6 +1,7 @@
 body {
   display: flex;
   justify-content: center;
+  background-color: grey;
 }
 .container {
   background-color: #225560;
